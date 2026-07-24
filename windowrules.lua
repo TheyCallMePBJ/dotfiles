@@ -8,4 +8,4 @@ hl.window_rule({match={title="^(Picture-in-Picture)$"}, float=1, pin=1, keep_asp
 hl.window_rule({match={class="^(gamescope)$"}, no_blur=1, fullscreen=1})
 hl.window_rule({match={class="steam_app_.*"}, no_blur=1, fullscreen=1})
 hl.window_rule({match={class="^(com.github.th-ch.youtube-music)$"}, opacity="0.75 0.65 override"})
-hl.window_rule({match={title=".*- YouTube - Zen Browser"}, opacity="1 override"})
+hl.window_rule({match={title=".*- YouTube — Zen Browser"}, opacity="1 override"})
