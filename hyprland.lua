@@ -5,12 +5,12 @@ local menu        = "hyprlauncher"
 hl.env("XCURSOR_SIZE", "24")
 hl.env("HYPRCURSOR_SIZE", "24")
 
-require("monitors")
 require("autostart")
 require("binds")
 require("lookandfeel")
 require("input")
 require("windowrules")
+require("host")
 
 hl.config({
   misc = {

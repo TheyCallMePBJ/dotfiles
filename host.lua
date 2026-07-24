@@ -1,7 +1,7 @@
 local hostname = io.popen("hostname"):read("*l")
 
 if hostname == "yahagi-cachy" then
-  return require("monitors.desktop")
+  return require("hosts.desktop")
 else
-  return require("monitors.laptop")
+  return require("hosts.laptop")
 end
