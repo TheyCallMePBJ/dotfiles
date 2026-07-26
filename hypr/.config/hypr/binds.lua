@@ -20,11 +20,17 @@ end
 
 hl.bind("SUPER + SHIFT + H", hl.dsp.window.move({monitor="l"}))
 hl.bind("SUPER + SHIFT + L", hl.dsp.window.move({monitor="r"}))
+hl.bind("SUPER + SHIFT + left", hl.dsp.window.move({monitor="l"}))
+hl.bind("SUPER + SHIFT + right", hl.dsp.window.move({monitor="r"}))
 
 hl.bind("SUPER + CTRL + H", hl.dsp.window.swap({direction="l"}))
 hl.bind("SUPER + CTRL + L", hl.dsp.window.swap({direction="r"}))
 hl.bind("SUPER + CTRL + K", hl.dsp.window.swap({direction="u"}))
 hl.bind("SUPER + CTRL + J", hl.dsp.window.swap({direction="d"}))
+hl.bind("SUPER + CTRL + left", hl.dsp.window.swap({direction="l"}))
+hl.bind("SUPER + CTRL + right", hl.dsp.window.swap({direction="r"}))
+hl.bind("SUPER + CTRL + up", hl.dsp.window.swap({direction="u"}))
+hl.bind("SUPER + CTRL + down", hl.dsp.window.swap({direction="d"}))
 
 hl.bind("SUPER + MINUS", hl.dsp.workspace.toggle_special())
 hl.bind("SUPER + SHIFT + MINUS", hl.dsp.window.move({workspace="special"}))

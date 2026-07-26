@@ -23,4 +23,5 @@ end
 hl.on("hyprland.start", function()
   hl.exec_cmd("vesktop -m")  
   hl.exec_cmd("steam -silent")
+  hl.exec_cmd("easyeffects -w")
 end)
