@@ -1,6 +1,6 @@
 hl.config({
   input={
-    kb_layout="us",
+    kb_layout="us,us",
     kb_variant=",colemak_dh",
 
     follow_mouse=1,

@@ -76,7 +76,7 @@ hl.bind("XF86AudioRaiseVolume", hl.dsp.exec_cmd("noctalia msg volume-up"), {lock
 hl.bind("XF86AudioLowerVolume", hl.dsp.exec_cmd("noctalia msg volume-down"), {lock=true})
 hl.bind("XF86AudioMute", hl.dsp.exec_cmd("noctalia msg volume-mute"), {lock=true})
 
-hl.bind("XF86AudioPlay", hl.dsp.exec_cmd("noctalia msg media play"), {lock=true})
+hl.bind("XF86AudioPlay", hl.dsp.exec_cmd("noctalia msg media toggle"), {lock=true})
 hl.bind("XF86AudioPause", hl.dsp.exec_cmd("noctalia msg media pause"), {lock=true})
 hl.bind("XF86AudioNext", hl.dsp.exec_cmd("noctalia msg media next"), {lock=true})
 hl.bind("XF86AudioPrev", hl.dsp.exec_cmd("noctalia msg media previous"), {lock=true})
