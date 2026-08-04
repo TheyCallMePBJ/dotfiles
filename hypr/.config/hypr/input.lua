@@ -23,6 +23,11 @@ hl.gesture({
 })
 
 hl.device({
+  name="compx-mad-r-1",
+  sensitivity=-0.75,
+})
+
+hl.device({
   name="compx-mad-8k-dongle-1",
   sensitivity=-0.75,
 })
