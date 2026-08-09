@@ -4,3 +4,5 @@ hl.monitor({
   position="0x0",
   scale=1.0,
 })
+
+hl.bind("code:240", hl.dsp.exec_cmd("code"))
