@@ -1,5 +1,5 @@
 hl.window_rule({match={class=".*"}, suppress_event="maximize"})
-hl.window_rule({match={title="^(Vesktop)$"}, opacity="0.95 0.85 override"})
+hl.window_rule({match={title="^(Vesktop)$"}, opacity="0.85 0.75 override"})
 hl.window_rule({match={title=".*Monkeytype.*"}, opacity="0.85"})
 hl.window_rule({match={title=".*- he"}, opacity="0.90 0.80 override"})
 hl.window_rule({match={title="^(Steam Settings)$"}, float=1})
