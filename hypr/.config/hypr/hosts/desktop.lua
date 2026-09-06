@@ -1,23 +1,23 @@
 hl.monitor({
-  output="DP-1",
-  mode="2560x1440@170.0",
-  position="1080x480",
+  output="HDMI-A-3",
+  mode="2560x1440@143.86",
+  position="0x480",
   scale=1.0,
 })
 hl.monitor({
-  output="DP-2",
+  output="DP-6",
   mode="1920x1080@60.0",
-  position="0x0",
+  position="2560x0",
   scale=1.0,
-  transform=1,
+  transform=3,
 })
 
 for i=1,5 do
-  hl.workspace_rule({workspace=i, monitor="DP-1"})
+  hl.workspace_rule({workspace=i, monitor="HDMI-A-3"})
 end
 
 for i=6,10 do
-  hl.workspace_rule({workspace=i, monitor="DP-2"})
+  hl.workspace_rule({workspace=i, monitor="DP-6"})
 end
 
 hl.on("hyprland.start", function()
