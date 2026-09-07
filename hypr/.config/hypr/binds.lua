@@ -60,7 +60,7 @@ hl.bind("SUPER + CTRL + W", hl.dsp.exec_cmd("~/Scripts/randomwall.sh"))
 
 hl.bind("SUPER + F", hl.dsp.window.fullscreen({mode=1, action=toggle}))
 hl.bind("SUPER + SHIFT + F", hl.dsp.window.fullscreen({mode=0, action=toggle}))
-hl.bind("SUPER + T", hl.dsp.window.set_prop({prop="opacity",value=1}))
+hl.bind("SUPER + T", hl.dsp.window.set_prop({prop="opaque",value="toggle"}))
 hl.bind("SUPER + ALT + Space", hl.dsp.exec_cmd("hyprctl switchxkblayout current next"))
 
 hl.bind("SUPER + Space", hl.dsp.exec_cmd("noctalia msg panel-toggle launcher"))
