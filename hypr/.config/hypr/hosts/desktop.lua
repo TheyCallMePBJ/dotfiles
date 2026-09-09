@@ -13,7 +13,7 @@ hl.monitor({
 })
 
 for i=1,5 do
-  hl.workspace_rule({workspace=i, monitor="HDMI-A-3"})
+  hl.workspace_rule({workspace=i, monitor="DP-4"})
 end
 
 for i=6,10 do
