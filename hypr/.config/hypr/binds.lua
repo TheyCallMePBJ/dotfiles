@@ -64,7 +64,7 @@ hl.bind("SUPER + SHIFT + F", hl.dsp.window.fullscreen({mode=0, action=toggle}))
 hl.bind("SUPER + T", hl.dsp.window.set_prop({prop="opaque",value="toggle"}))
 hl.bind("SUPER + ALT + Space", hl.dsp.exec_cmd("hyprctl switchxkblayout current next"))
 
-hl.bind("SUPER + Space", hl.dsp.exec_cmd("fuzzel"))
+hl.bind("SUPER + Space", hl.dsp.exec_cmd("noctalia msg panel-toggle launcher"))
 hl.bind("SUPER + Escape", hl.dsp.exec_cmd("noctalia msg panel-toggle session"))
 hl.bind("SUPER + A", hl.dsp.exec_cmd("noctalia msg panel-toggle control-center"))
 hl.bind("SUPER + I", hl.dsp.exec_cmd("noctalia msg settings-toggle"))
