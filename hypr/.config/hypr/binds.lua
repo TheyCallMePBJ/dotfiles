@@ -1,4 +1,5 @@
 hl.bind("SUPER + RETURN", hl.dsp.exec_cmd("ghostty -e tmux -u"))
+hl.bind("SUPER + SHIFT + RETURN", hl.dsp.exec_cmd("ghostty"))
 hl.bind("SUPER + Q", hl.dsp.window.close())
 hl.bind("SUPER + E", hl.dsp.exec_cmd("nautilus"))
 hl.bind("SUPER + V", hl.dsp.window.float(toggle))
