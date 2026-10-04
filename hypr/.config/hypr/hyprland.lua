@@ -1,6 +1,6 @@
-local terminal    = "kitty"
-local fileManager = "dolphin"
-local menu        = "hyprlauncher"
+local terminal    = "ghostty"
+local fileManager = "nautilus"
+local menu        = "fuzzel"
 
 hl.env("XCURSOR_SIZE", "24")
 hl.env("HYPRCURSOR_SIZE", "24")
