@@ -52,6 +52,7 @@ hl.bind("SUPER + CTRL + G", hl.dsp.exec_cmd("vesktop"))
 hl.bind("SUPER + O", hl.dsp.exec_cmd("obsidian"))
 hl.bind("SUPER + M", hl.dsp.exec_cmd("youtube-music"))
 hl.bind("CTRL + SHIFT + Escape", hl.dsp.exec_cmd("ghostty -e btop --force-utf"))
+hl.bind("SUPER + SHIFT + M", hl.dsp.exec_cmd("flatpak run org.jellyfin.JellyfinDesktop"))
 
 hl.bind("PRINT", hl.dsp.exec_cmd("hyprshot -m output -m active -o ~/Pictures/Screenshots/"))
 hl.bind("SUPER + SHIFT + S", hl.dsp.exec_cmd("hyprshot -m region -z -o ~/Pictures/Screenshots/"))
