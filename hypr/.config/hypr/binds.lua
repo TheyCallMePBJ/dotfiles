@@ -72,6 +72,7 @@ hl.bind("SUPER + A", hl.dsp.exec_cmd("noctalia msg panel-toggle control-center")
 hl.bind("SUPER + I", hl.dsp.exec_cmd("noctalia msg settings-toggle"))
 hl.bind("SUPER + N", hl.dsp.exec_cmd("noctalia msg panel-toggle control-center notifications"))
 hl.bind("CTRL + ALT + X", hl.dsp.exec_cmd("noctalia msg panel-toggle clipboard"))
+hl.bind("SUPER + W", hl.dsp.exec_cmd("noctalia msg panel-toggle wallpaper"))
 
 hl.bind("XF86MonBrightnessUp", hl.dsp.exec_cmd("noctalia msg brightness-up"), {lock=true})
 hl.bind("XF86MonBrightnessDown", hl.dsp.exec_cmd("noctalia msg brightness-down"), {lock=true})
