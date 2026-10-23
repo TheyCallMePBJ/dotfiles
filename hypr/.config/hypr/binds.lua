@@ -59,7 +59,6 @@ hl.bind("SUPER + SHIFT + S", hl.dsp.exec_cmd("hyprshot -m region -z -o ~/Picture
 hl.bind("SUPER + CTRL + S", hl.dsp.exec_cmd("hyprshot -m region -z --clipboard-only"))
 hl.bind("SUPER + SHIFT + E", hl.dsp.exec_cmd("~/Scripts/FuzzelEmoji.sh"))
 hl.bind("SUPER + SHIFT + R", hl.dsp.exec_cmd("~/Scripts/RefreshNoctalia.sh"))
-hl.bind("SUPER + CTRL + W", hl.dsp.exec_cmd("~/Scripts/randomwall.sh"))
 
 hl.bind("SUPER + F", hl.dsp.window.fullscreen({mode=1, action=toggle}))
 hl.bind("SUPER + SHIFT + F", hl.dsp.window.fullscreen({mode=0, action=toggle}))
@@ -73,6 +72,7 @@ hl.bind("SUPER + I", hl.dsp.exec_cmd("noctalia msg settings-toggle"))
 hl.bind("SUPER + N", hl.dsp.exec_cmd("noctalia msg panel-toggle control-center notifications"))
 hl.bind("CTRL + ALT + X", hl.dsp.exec_cmd("noctalia msg panel-toggle clipboard"))
 hl.bind("SUPER + W", hl.dsp.exec_cmd("noctalia msg panel-toggle wallpaper"))
+hl.bind("SUPER + SHIFT + W", hl.dsp.exec_cmd("noctalia msg wallpaper-random"))
 
 hl.bind("XF86MonBrightnessUp", hl.dsp.exec_cmd("noctalia msg brightness-up"), {lock=true})
 hl.bind("XF86MonBrightnessDown", hl.dsp.exec_cmd("noctalia msg brightness-down"), {lock=true})
