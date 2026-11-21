@@ -44,6 +44,7 @@ My Linux desktop setup: [Hyprland](https://hypr.land) with a Lua config, [Ghostt
 | `Super+Space` | App launcher |
 | `Super+A` | Control centre |
 | `Super+Escape` | Session menu |
+| `Super+Shift+E` | Emoji menu |
 | `Super+Q` | Close window |
 | `Super+h/j/k/l` or arrows | Move focus |
 | `Super+Ctrl+h/j/k/l` | Swap windows |
