@@ -70,7 +70,7 @@ hl.bind("SUPER + Escape", hl.dsp.exec_cmd("noctalia msg panel-toggle session"))
 hl.bind("SUPER + A", hl.dsp.exec_cmd("noctalia msg panel-toggle control-center"))
 hl.bind("SUPER + I", hl.dsp.exec_cmd("noctalia msg settings-toggle"))
 hl.bind("SUPER + N", hl.dsp.exec_cmd("noctalia msg panel-toggle control-center notifications"))
-hl.bind("CTRL + ALT + X", hl.dsp.exec_cmd("noctalia msg panel-toggle clipboard"))
+hl.bind("CTRL + ALT + X", hl.dsp.exec_cmd("ghostty --title=clipdeck -e /home/pbj/.cargo/bin/clipdeck"))
 hl.bind("SUPER + W", hl.dsp.exec_cmd("noctalia msg panel-toggle wallpaper"))
 hl.bind("SUPER + SHIFT + W", hl.dsp.exec_cmd("noctalia msg wallpaper-random"))
 
