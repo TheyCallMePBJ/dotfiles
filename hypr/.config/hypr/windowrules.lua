@@ -11,3 +11,4 @@ hl.window_rule({match={class="^(com.github.th-ch.youtube-music)$"}, opacity="0.7
 hl.window_rule({match={title=".*- YouTube — Zen Browser"}, opacity="1 override"})
 hl.window_rule({match={class="^(org.jellyfin.JellyfinDesktop)$"}, opacity="1 override"})
 hl.window_rule({match={class="^(signal)$"}, opacity="0.9 0.8 override"})
+hl.window_rule({name="clipdeck-popup",match={title="^clipdeck$"},float=true,center=true,size={900,600},stay_focused=true,dim_around=true})
