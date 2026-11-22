@@ -74,15 +74,15 @@ hl.bind("CTRL + ALT + X", hl.dsp.exec_cmd("ghostty --title=clipdeck -e /home/pbj
 hl.bind("SUPER + W", hl.dsp.exec_cmd("noctalia msg panel-toggle wallpaper"))
 hl.bind("SUPER + SHIFT + W", hl.dsp.exec_cmd("noctalia msg wallpaper-random"))
 
-hl.bind("XF86MonBrightnessUp", hl.dsp.exec_cmd("qs -c vesper call brightness up"), {lock=true})
-hl.bind("XF86MonBrightnessDown", hl.dsp.exec_cmd("qs -c vesper call brightness down"), {lock=true})
-hl.bind("XF86AudioRaiseVolume", hl.dsp.exec_cmd("qs -c vesper call volume up"), {lock=true})
-hl.bind("XF86AudioLowerVolume", hl.dsp.exec_cmd("qs -c vesper call volume down"), {lock=true})
-hl.bind("XF86AudioMute", hl.dsp.exec_cmd("qs -c vesper call volume toggleMute"), {lock=true})
+hl.bind("XF86MonBrightnessUp", hl.dsp.exec_cmd("qs -c vesper ipc call brightness up"), {lock=true})
+hl.bind("XF86MonBrightnessDown", hl.dsp.exec_cmd("qs -c vesper ipc call brightness down"), {lock=true})
+hl.bind("XF86AudioRaiseVolume", hl.dsp.exec_cmd("qs -c vesper ipc call volume up"), {lock=true})
+hl.bind("XF86AudioLowerVolume", hl.dsp.exec_cmd("qs -c vesper ipc call volume down"), {lock=true})
+hl.bind("XF86AudioMute", hl.dsp.exec_cmd("qs -c vesper ipc call volume toggleMute"), {lock=true})
 
-hl.bind("XF86AudioPlay", hl.dsp.exec_cmd("qs -c vesper call media playPause"), {lock=true})
+hl.bind("XF86AudioPlay", hl.dsp.exec_cmd("qs -c vesper ipc call media playPause"), {lock=true})
 hl.bind("XF86AudioPause", hl.dsp.exec_cmd("noctalia msg media pause"), {lock=true})
-hl.bind("XF86AudioNext", hl.dsp.exec_cmd("qs -c vesper call media next"), {lock=true})
-hl.bind("XF86AudioPrev", hl.dsp.exec_cmd("qs -c vesper call media previous"), {lock=true})
+hl.bind("XF86AudioNext", hl.dsp.exec_cmd("qs -c vesper ipc call media next"), {lock=true})
+hl.bind("XF86AudioPrev", hl.dsp.exec_cmd("qs -c vesper ipc call media previous"), {lock=true})
 
 hl.bind("SUPER + ALT + L", hl.dsp.exec_cmd("noctalia msg session lock-and-suspend"))
