@@ -70,7 +70,7 @@ hl.bind("SUPER + Escape", hl.dsp.exec_cmd("qs -c vesper ipc call session toggle"
 hl.bind("SUPER + A", hl.dsp.exec_cmd("qs -c vesper ipc call controlCenter toggle"))
 hl.bind("SUPER + I", hl.dsp.exec_cmd("qs -c vesper ipc call settings toggle"))
 hl.bind("SUPER + N", hl.dsp.exec_cmd("qs -c vesper ipc call notifications toggle"))
-hl.bind("CTRL + ALT + X", hl.dsp.exec_cmd("ghostty --title=clipdeck -e /home/pbj/.cargo/bin/clipdeck"))
+hl.bind("CTRL + ALT + X", hl.dsp.exec_cmd("ghostty --title=clipdeck -e ~/.cargo/bin/clipdeck"))
 hl.bind("SUPER + W", hl.dsp.exec_cmd("qs -c vesper ipc call wallpaper toggle"))
 hl.bind("SUPER + SHIFT + W", hl.dsp.exec_cmd("qs -c vesper ipc call wallpaper random"))
 
