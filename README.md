@@ -1,9 +1,8 @@
 # dotfiles
 
-My Linux desktop setup: [Hyprland](https://hypr.land) with a Lua config, [Ghostty](https://ghostty.org), tmux, [Helix](https://helix-editor.com) and [fuzzel](https://codeberg.org/dnkl/fuzzel), with [Vesper](https://github.com/TheyCallMePBJ/vesper), my own [Quickshell](https://quickshell.org) shell, for the bar and panels. fuzzel is the app launcher for now. The terminal, editor and fuzzel all use one colour theme (Compline). Managed with [GNU Stow](https://www.gnu.org/software/stow/).
+My Linux desktop setup: [Hyprland](https://hypr.land) with a Lua config, [Ghostty](https://ghostty.org), tmux, [Helix](https://helix-editor.com) and [fuzzel](https://codeberg.org/dnkl/fuzzel), with [Vesper](https://github.com/TheyCallMePBJ/vesper), my own [Quickshell](https://quickshell.org) shell, for the bar, launcher and panels. The terminal, editor and fuzzel all use one colour theme (Compline). Managed with [GNU Stow](https://www.gnu.org/software/stow/).
 
-![Desktop overview](docs/desktop.png)
-<!-- SCREENSHOT: docs/desktop.png, the main desktop (see notes) -->
+![Main monitor with the Vesper bar, fastfetch and Helix](docs/desktop.png)
 
 ## What's here
 
@@ -13,29 +12,26 @@ My Linux desktop setup: [Hyprland](https://hypr.land) with a Lua config, [Ghostt
 | `ghostty` | Terminal: Compline theme, 80% background opacity (applied to cell backgrounds too) |
 | `tmux` | `Ctrl+A` prefix, `Alt+h/j/k/l` to move between panes, mouse support |
 | `helix` | Editor, Compline theme |
-| `fuzzel` | App launcher and emoji picker, Compline theme |
+| `fuzzel` | Menu for the emoji picker, Compline theme |
 | `fastfetch` | System info layout |
 
 ### One config, two machines
 
 `hypr/host.lua` checks the hostname at startup and loads either `hosts/desktop.lua` or `hosts/laptop.lua`. The desktop file sets up two monitors: a 1440p 170 Hz main screen with workspaces 1–5, and a 1080p screen rotated to portrait with workspaces 6–10. It also starts a few desktop-only apps. The laptop file sets up the built-in screen only. Everything else is shared.
 
-![Dual-monitor layout](docs/dual-monitor.png)
-<!-- SCREENSHOT: docs/dual-monitor.png, both desktop monitors (see notes) -->
+![Both monitors: main screen on the left, portrait screen running btop on the right](docs/dual-monitor.png)
 
 ### Terminal
 
 `Super+Enter` opens Ghostty inside tmux. Helix and tmux use the same theme as the rest of the desktop.
 
-![Ghostty with tmux, Helix and fastfetch](docs/terminal.png)
-<!-- SCREENSHOT: docs/terminal.png, terminal close-up (see notes) -->
+![Ghostty with tmux panes running fastfetch and Helix](docs/terminal.png)
 
 ### Launcher and panels
 
-At login Hyprland starts Vesper (`qs -c vesper`), which provides the bar, control centre, notifications, session menu and settings panels. The keybinds talk to it over Quickshell IPC. The app launcher is fuzzel until Vesper has its own.
+At login Hyprland starts Vesper (`qs -c vesper`), which provides the bar, app launcher, control centre, notifications, wallpaper picker, session menu and settings panels. The keybinds talk to it over Quickshell IPC, including the volume, brightness and media keys.
 
-![Launcher open](docs/launcher.png)
-<!-- SCREENSHOT: docs/launcher.png, launcher open (see notes) -->
+![Vesper's app launcher searching for Steam](docs/launcher.png)
 
 ## Keybinds
 
@@ -44,10 +40,11 @@ At login Hyprland starts Vesper (`qs -c vesper`), which provides the bar, contro
 | `Super+Enter` | Terminal (Ghostty + tmux) |
 | `Super+Shift+Enter` | Terminal without tmux |
 | `Super+E` | File manager (Nautilus) |
-| `Super+Space` | App launcher (fuzzel) |
+| `Super+Space` | App launcher |
 | `Super+A` | Control centre |
 | `Super+N` | Notifications |
 | `Super+I` | Vesper settings |
+| `Super+W` / `Super+Shift+W` | Wallpaper picker / random wallpaper |
 | `Super+Escape` | Session menu |
 | `Super+Shift+E` | Emoji picker |
 | `Ctrl+Alt+X` | Clipboard history (clipdeck) |
