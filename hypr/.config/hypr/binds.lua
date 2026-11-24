@@ -58,7 +58,7 @@ hl.bind("PRINT", hl.dsp.exec_cmd("hyprshot -m output -m active -o ~/Pictures/Scr
 hl.bind("SUPER + SHIFT + S", hl.dsp.exec_cmd("hyprshot -m region -z -o ~/Pictures/Screenshots/"))
 hl.bind("SUPER + CTRL + S", hl.dsp.exec_cmd("hyprshot -m region -z --clipboard-only"))
 hl.bind("SUPER + SHIFT + E", hl.dsp.exec_cmd("~/.config/hypr/scripts/FuzzelEmoji.sh"))
-hl.bind("SUPER + SHIFT + R", hl.dsp.exec_cmd("~/.config/hypr/scripts/RefreshNoctalia.sh"))
+hl.bind("SUPER + SHIFT + R", hl.dsp.exec_cmd("~/.config/hypr/scripts/RefreshVesper.sh"))
 
 hl.bind("SUPER + F", hl.dsp.window.fullscreen({mode=1, action=toggle}))
 hl.bind("SUPER + SHIFT + F", hl.dsp.window.fullscreen({mode=0, action=toggle}))
@@ -84,5 +84,3 @@ hl.bind("XF86AudioPlay", hl.dsp.exec_cmd("qs -c vesper ipc call media playPause"
 hl.bind("XF86AudioPause", hl.dsp.exec_cmd("qs -c vesper ipc call media pause"), {lock=true})
 hl.bind("XF86AudioNext", hl.dsp.exec_cmd("qs -c vesper ipc call media next"), {lock=true})
 hl.bind("XF86AudioPrev", hl.dsp.exec_cmd("qs -c vesper ipc call media previous"), {lock=true})
-
-hl.bind("SUPER + ALT + L", hl.dsp.exec_cmd("noctalia msg session lock-and-suspend"))

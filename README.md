@@ -46,6 +46,7 @@ At login Hyprland starts Vesper (`qs -c vesper`), which provides the bar, app la
 | `Super+I` | Vesper settings |
 | `Super+W` / `Super+Shift+W` | Wallpaper picker / random wallpaper |
 | `Super+Escape` | Session menu |
+| `Super+Shift+R` | Restart Vesper |
 | `Super+Shift+E` | Emoji picker |
 | `Ctrl+Alt+X` | Clipboard history (clipdeck) |
 | `Ctrl+Shift+Escape` | btop |
